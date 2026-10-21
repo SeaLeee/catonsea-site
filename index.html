@@ -3,31 +3,144 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>小鱼船 Cat on Sea · 支持 Support</title>
+<title>航海的猫 Sailing Cat · 支持 Support</title>
+<meta name="description" content="航海的猫（Sailing Cat）支持中心：专注锁定、iCloud 同步与备份、恢复购买、取消订阅、数据删除和联系方式。">
+<meta name="theme-color" content="#FFF8EE">
 <style>
-  body { font-family: -apple-system, "PingFang SC", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #5C4433; line-height: 1.7; background: #FFF8EE; }
-  h1 { font-size: 26px; } h2 { font-size: 18px; margin-top: 28px; }
-  a { color: #B9733B; }
+  :root { color-scheme: light; --ink:#5C4433; --muted:#8C7A6B; --paper:#FFF8EE; --line:#E6D8C4; --accent:#B9733B; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 56px; color: var(--ink); line-height: 1.75; background: var(--paper); -webkit-text-size-adjust: 100%; }
+  header { padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  .eyebrow { margin: 0 0 4px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 8px; }
+  .lead { font-size: 17px; margin: 0 0 6px; }
+  .meta, .note { color: var(--muted); font-size: 14px; }
+  nav { margin-top: 14px; font-size: 14px; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  section { padding-top: 8px; }
+  h2 { font-size: 20px; margin: 32px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  h3 { font-size: 16px; margin: 22px 0 6px; }
+  p, li { font-size: 15px; }
+  ol, ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .button { display: inline-block; padding: 10px 16px; border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  .button:hover { filter: brightness(.95); }
+  .note { margin-top: 10px; }
+  .lang { margin: 18px 0 0; font-size: 14px; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 44px 0 0; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+  footer p { font-size: 13px; margin: 4px 0; }
+  @media (max-width: 480px) { body { padding: 24px 16px 40px; } h1 { font-size: 26px; } }
 </style>
 </head>
 <body>
-<h1>小鱼船 Cat on Sea</h1>
-<p>你专注，猫咪替你出海钓鱼。<br>You focus, the cat goes fishing.</p>
+<header>
+  <p class="eyebrow">航海的猫 · Sailing Cat</p>
+  <h1>支持中心 · Support</h1>
+  <p class="lead">你专注，猫猫替你出海钓鱼。</p>
+  <p class="meta">App 版本 1.0 · 需要 iOS 17 或更高版本</p>
+  <p class="lang"><a href="#zh">中文</a> · <a href="#en">English</a></p>
+</header>
 
-<h2>支持 · Support</h2>
-<p>遇到问题或有建议？请在 <a href="https://github.com/SeaLeee/catonsea-site/issues">这里</a> 留言，我们会尽快回复。<br>
-Questions or ideas? Leave us a message <a href="https://github.com/SeaLeee/catonsea-site/issues">here</a>.</p>
+<section id="zh" lang="zh-Hans">
+  <h2>需要帮助？</h2>
+  <p>遇到问题、发现 bug，或者有想加的猫咪、海域和功能，欢迎告诉我们。</p>
+  <p><a class="button" href="https://github.com/SeaLeee/catonsea-site/issues">提交问题或建议</a></p>
+  <p class="note">提交时请附上：设备型号、iOS 版本、App 版本、复现步骤；如果能附截图就更好。我们会在看到后尽快回复。</p>
 
-<h2>常见问题 · FAQ</h2>
-<p><strong>数据如何在多台设备间同步？</strong> 在「设置 → 同步数据到 iCloud」开启即可，数据保存在你自己的 iCloud 中。甲板上的垃圾只属于当前设备。<br>
-<strong>How do I sync across devices?</strong> Turn on Settings → Sync data to iCloud. Data lives in your own iCloud. Trash on the deck stays on the current device.</p>
-<p><strong>如何恢复购买？</strong> 「设置 → 小鱼船 Pro → 恢复购买」。<br>
-<strong>How do I restore purchases?</strong> Settings → Cat on Sea Pro → Restore Purchases.</p>
-<p><strong>如何取消订阅？</strong> 系统「设置 → Apple 账户 → 订阅」。<br>
-<strong>How do I cancel?</strong> iOS Settings → Apple Account → Subscriptions.</p>
+  <h2>常见问题</h2>
 
-<h2>法律 · Legal</h2>
-<p><a href="privacy-policy.html">隐私政策 Privacy Policy</a> ·
-<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">使用条款 Terms of Use (Apple EULA)</a></p>
+  <h3>专注锁定没有生效</h3>
+  <ol>
+    <li>确认「设置 → 专注锁定」已授权「屏幕使用时间」。</li>
+    <li>确认本次专注已经开始，而不是只选好了时长。</li>
+    <li>检查系统「设置 → 屏幕使用时间 → 始终允许」是否把目标 App 放行了。</li>
+    <li>回到 App 收竿后，屏蔽会自动解除；如果中途强制退出，重新打开 App 会尝试恢复状态。</li>
+  </ol>
+
+  <h3>换手机后数据不见了</h3>
+  <p>在旧设备上确认「设置 → 同步数据到 iCloud」已开启，并等 iCloud 同步完成；新设备用同一个 Apple ID 登录后，再开启同步。也可以在「设置 → iCloud 备份」里从最近的备份快照恢复。</p>
+
+  <h3>恢复购买没有反应</h3>
+  <p>确认当前登录的是购买时使用的 Apple ID；打开「设置 → 航海的猫 Pro → 恢复购买」。家庭共享成员请确认已加入家庭组，并使用自己的 Apple ID。</p>
+
+  <h3>怎么取消订阅</h3>
+  <p>打开系统「设置 → Apple 账户 → 订阅 → 航海的猫」，或访问 <a href="https://apps.apple.com/account/subscriptions">App Store 订阅管理</a>。取消后，当前订阅期结束前仍可使用 Pro。</p>
+
+  <h3>怎么申请退款</h3>
+  <p>App 内购买由 Apple 处理，请在 <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> 提交退款申请。开发者无法直接为你退款。</p>
+
+  <h3>怎么删除我的数据</h3>
+  <p>打开 App 内「设置 → 关于航海的猫 → 重新开始」，可以清除本机数据；如果开启了 iCloud 同步，也会一起清除 iCloud 中的同步数据。</p>
+  <p>iCloud 备份可以在「设置 → iCloud 备份」里逐份删除。删除 App 也会删除本机数据，但不会自动删除 iCloud 中的数据。</p>
+
+  <h3>需要联网吗</h3>
+  <p>核心功能离线可用。iCloud 同步、iCloud 备份和 App 内购买需要网络。</p>
+
+  <h3>支持哪些设备和语言</h3>
+  <p>iPhone，iOS 17 或更高版本。支持简体中文、繁體中文、English、日本語、한국어、Français、Español。</p>
+
+  <h3>猫猫的鱼和装扮会丢吗</h3>
+  <p>数据默认保存在本机；开启 iCloud 同步后，会在同一 Apple ID 的设备间同步。换机前建议先开启同步，或做一次 iCloud 备份。</p>
+
+  <h2>法律</h2>
+  <p><a href="privacy-policy.html">隐私政策</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">使用条款（Apple 标准 EULA）</a></p>
+
+  <p class="note">航海的猫是时间管理工具，不提供医疗或心理健康建议。</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+  <h2>Need help?</h2>
+  <p>Found a bug, have a question, or want to suggest a cat, a sea, or a feature? Tell us.</p>
+  <p><a class="button" href="https://github.com/SeaLeee/catonsea-site/issues">Report an issue or send feedback</a></p>
+  <p class="note">Please include your device model, iOS version, app version, and steps to reproduce. A screenshot helps. We'll reply as soon as we can.</p>
+
+  <h2>FAQ</h2>
+
+  <h3>Focus Lock isn't working</h3>
+  <ol>
+    <li>Make sure Screen Time permission is granted in Settings → Focus Lock.</li>
+    <li>Make sure the session has actually started, not just the duration selected.</li>
+    <li>Check whether the app you want to block is allowed in iOS Settings → Screen Time → Always Allowed.</li>
+    <li>The shield is removed when you return to the app and reel in. If the app was force-quit, reopen it so it can restore the session state.</li>
+  </ol>
+
+  <h3>My data is missing on a new device</h3>
+  <p>On the old device, turn on Settings → Sync Data to iCloud and wait for the sync to finish. On the new device, sign in with the same Apple ID and turn sync on. You can also restore from a recent backup in Settings → iCloud Backup.</p>
+
+  <h3>Restore Purchases isn't working</h3>
+  <p>Make sure you're signed in with the Apple ID used for the purchase, then open Settings → Sailing Cat Pro → Restore Purchases. Family Sharing members should confirm they've joined the family group and use their own Apple ID.</p>
+
+  <h3>How do I cancel my subscription?</h3>
+  <p>Open iOS Settings → Apple Account → Subscriptions → Sailing Cat, or visit <a href="https://apps.apple.com/account/subscriptions">App Store subscription management</a>. You keep Pro until the end of the current billing period.</p>
+
+  <h3>How do I request a refund?</h3>
+  <p>In-app purchases are handled by Apple. Request a refund at <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>. Developers cannot issue refunds directly.</p>
+
+  <h3>How do I delete my data?</h3>
+  <p>Open Settings → About Sailing Cat → Start Over in the app to clear data on this device; if iCloud sync is on, the synced iCloud data is cleared too.</p>
+  <p>You can delete individual iCloud backups in Settings → iCloud Backup. Deleting the app also removes data on your device, but does not automatically delete data in iCloud.</p>
+
+  <h3>Does the app need internet?</h3>
+  <p>Core features work offline. iCloud sync, iCloud backup, and in-app purchases need a network connection.</p>
+
+  <h3>Which devices and languages are supported?</h3>
+  <p>iPhone, iOS 17 or later. Simplified Chinese, Traditional Chinese, English, Japanese, Korean, French, and Spanish.</p>
+
+  <h3>Will I lose my fish and outfits?</h3>
+  <p>Data is stored on your device by default. With iCloud sync on, it syncs across devices signed in to the same Apple ID. Before switching phones, turn on sync or make an iCloud backup.</p>
+
+  <h2>Legal</h2>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple Standard EULA)</a></p>
+
+  <p class="note">Sailing Cat is a time-management tool and does not provide medical or mental-health advice.</p>
+</section>
+
+<footer>
+  <p>© 2026 Xiaoxi Li · 航海的猫 Sailing Cat</p>
+  <p>最后更新：2026 年 10 月 21 日 · Last updated: October 21, 2026</p>
+</footer>
 </body>
 </html>
